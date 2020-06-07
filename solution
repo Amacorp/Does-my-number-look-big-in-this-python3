@@ -1,0 +1,18 @@
+
+def narcissistic( value ):
+  return value == sum([int(x)**len(str(value)) for x in str(value)])
+print(narcissistic(5548))
+
+
+or
+
+
+def narcissistic( value ):
+    value = str(value)
+    size = len(value)
+    res = 0
+    for i in value:
+        res += int(i) ** size
+    return res == int(value)
+
+print(narcissistic(124))
