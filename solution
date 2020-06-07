@@ -4,7 +4,9 @@ def narcissistic( value ):
 print(narcissistic(5548))
 
 
+
 or
+
 
 
 def narcissistic( value ):
